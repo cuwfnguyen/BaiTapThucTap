@@ -1,0 +1,37 @@
+﻿  Main.cpp
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\DynamicObject.cpp(3,21): error C2011: 'DynamicObject': 'class' type redefinition
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\DynamicObject.cpp(3): message : see declaration of 'DynamicObject'
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\Car.cpp(3,34): error C2504: 'DynamicObject': base class undefined
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\Car.cpp(6,47): error C2614: 'Car': illegal member initialization: 'DynamicObject' is not a base or member
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\StaticObject.cpp(2,20): error C2011: 'StaticObject': 'class' type redefinition
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\StaticObject.cpp(2): message : see declaration of 'StaticObject'
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\House.cpp(3,34): error C2504: 'StaticObject': base class undefined
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\House.cpp(6,49): error C2614: 'House': illegal member initialization: 'StaticObject' is not a base or member
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\Main.cpp(11,54): warning C4305: 'argument': truncation from 'double' to 'float'
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\Main.cpp(12,40): warning C4305: 'argument': truncation from 'double' to 'float'
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\Main.cpp(13,46): warning C4305: 'argument': truncation from 'double' to 'float'
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\Main.cpp(16,25): error C2664: 'void std::list<BaseObject *,std::allocator<BaseObject *>>::push_back(const _Ty &)': cannot convert argument 1 from 'Car *' to '_Ty &&'
+          with
+          [
+              _Ty=BaseObject *
+          ]
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\Main.cpp(16,25): message : Reason: cannot convert from 'Car *' to '_Ty'
+          with
+          [
+              _Ty=BaseObject *
+          ]
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\Main.cpp(16,23): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\list(973,10): message : see declaration of 'std::list<BaseObject *,std::allocator<BaseObject *>>::push_back'
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\Main.cpp(17,25): error C2664: 'void std::list<BaseObject *,std::allocator<BaseObject *>>::push_back(const _Ty &)': cannot convert argument 1 from 'House *' to '_Ty &&'
+          with
+          [
+              _Ty=BaseObject *
+          ]
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\Main.cpp(17,25): message : Reason: cannot convert from 'House *' to '_Ty'
+          with
+          [
+              _Ty=BaseObject *
+          ]
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\Main.cpp(17,23): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\list(973,10): message : see declaration of 'std::list<BaseObject *,std::allocator<BaseObject *>>::push_back'
+E:\20201\ThucTapGameLoft\GameLoft\Bai3\Main.cpp(31,21): error C3867: 'BaseObject::PrintPosition': non-standard syntax; use '&' to create a pointer to member
