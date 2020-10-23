@@ -3,7 +3,7 @@
 #include<string>
 
 	using namespace std;
-	class BaseObject
+	 class BaseObject
 	{
 	public:
 		float x, y;
@@ -11,6 +11,7 @@
 		string name;
 
 		BaseObject() {}
+		~BaseObject() {}
 		BaseObject(int id, string name, float x, float y) {
 			this->id = id;
 			this->name = name;
@@ -25,10 +26,11 @@
 		}
 
 		void PrintPosition() {
-			printf_s("%f \n %f", x, y);
+			printf_s("x = %f y = %f \n", x, y);
 		}
 		void Move() {
-			x += 1;
+			if(id<10)
+			x += 1.0;
 		};
 
 	};
